@@ -12,7 +12,6 @@
         table {
             border: 3px solid black;
             border-collapse: collapse;
-
         }
 
         th {
@@ -26,28 +25,37 @@
         h1 {
             text-align: right;
         }
+        header{
+            display:flex;
+            justify-content:space-between
+        }
     </style>
 </head>
 
 <body>
-    <div>
+    <header>
         <img src="assets/images/logo.png" alt="logo">
 
-        
-                <h2>Company Name</h2>
+        <div>
+            <center>
+
                 <p>Address<br>
                     City,State,ZIP<br>
                     Phone,fax<br>
                     Email,website,componey</p>
-            
-        
+            </center>
 
-        <h1 text-align="right">Job Invoice
-            <br>
-             Date:<br>
-            Invoice:
-        </h1>
-    </div>
+        </div>
+
+        <div>
+            <h1 text-align="right">Job Invoice
+                <br>
+                Date:<br>
+                Invoice:
+            </h1>
+        </div>
+    </header>
+
     <hr>
     <br><br>
     <h4>Bill To</h4>
@@ -56,9 +64,11 @@
         City<br>
         Country<br>
         Phone</p>
+
     
-        <div>
-            <table>
+        <center>
+            <div>
+            <table cellspacing="11" cellpadding="11" width="50%">
                 <tr>
                     <th>Start Date</th>
                     <th>Finish Date</th>
@@ -72,94 +82,96 @@
                     <td>&nbsp</td>
                 </tr>
             </table>
-        </div>
-        <br>
-        <div>
-            <table>
-                <tr>
-                    <th>Item ID</th>
-                    <th>Description</th>
-                    <th>Quantity</th>
-                    <th>Limit price</th>
-                    <th>Line Totle</th>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td colspan="4">subtotal</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Extras</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Total </td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Paid</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td colspan="4">Total Due</td>
-                    <td>&nbsp</td>
-                </tr>
-            </table>
-        </div>
-        <br>
-        <br>
-        <center>
-            <footer>
-                <div id="footer">
-                    <i>THANK YOU FOR YOUR BUSINESS</i>
-                </div>
-            </footer>
-        </center>
-        
-            
-        
+            </div>
+    <br>
+    <div>
+        <table table cellspacing="11" cellpadding="11" width="50%">
+            <tr>
+                <th>Item ID</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Limit price</th>
+                <th>Line Totle</th>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <th colspan="4" text-align="right">subtotal</th>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <th colspan="4">Extras</th>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <th colspan="4">Total </th>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <th colspan="4">Paid</th>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <th colspan="4">Total Due</th>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+    </div>
+    </center>
     
+    <br>
+    <br>
+    <center>
+        <footer>
+            <div id="footer">
+                <i>THANK YOU FOR YOUR BUSINESS</i>
+            </div>
+        </footer>
+    </center>
+
+
+
+
 </body>
 
 </html>
